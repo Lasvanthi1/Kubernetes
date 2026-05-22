@@ -28,7 +28,7 @@
 |------|---------|---------|
 | Kubernetes | v1.28+ | Container orchestration |
 | kubectl | v1.28+ | Kubernetes CLI |
-| CentOS | Latest | Container image |
+| nginx | Latest | Container image |
 | OS | Ubuntu 22.04 | Host machine |
 | Working Directory | `/home/user` | Lab working path |
 
@@ -190,7 +190,7 @@ metadata:
 spec:
   containers:
     - name: testcon
-      image: centos
+      image: nginx
 
       command:
         - "/bin/bash"
@@ -216,7 +216,7 @@ spec:
 | `apiVersion: v1` | Kubernetes API version |
 | `kind: Pod` | Creates a Pod object |
 | `metadata.name` | Pod name |
-| `image: centos` | Container image |
+| `image: nginx` | Container image |
 | `command` | Keeps container running |
 | `resources.requests` | Minimum guaranteed resources |
 | `resources.limits` | Maximum allowed resources |
