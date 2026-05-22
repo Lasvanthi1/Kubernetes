@@ -14,9 +14,8 @@
 - [Task 2 — Deploy the Pod](#task-2--deploy-the-pod)
 - [Task 3 — Verify Pod Status](#task-3--verify-pod-status)
 - [Task 4 — Inspect Pod Details](#task-4--inspect-pod-details)
-- [Task 5 — Access the NGINX Pod](#task-5--access-the-nginx-pod)
-- [Task 6 — View Pod Logs](#task-6--view-pod-logs)
-- [Task 7 — Delete the Pod](#task-7--delete-the-pod)
+- [Task 5 — View Pod Logs](#task-5--view-pod-logs)
+- [Task 6 — Delete the Pod](#task-6--delete-the-pod)
 - [Understanding Guide](#-understanding-guide)
 - [Production Notes](#-production-notes)
 
@@ -170,7 +169,7 @@ spec:
 
 # 📸 Screenshot
 
-![Task 1 - Create Pod YAML](./screenshots/task1-create-pod-yaml.png)
+![Task 1 - Create Pod YAML](./screenshots/task1-create-pod-yaml.PNG)
 
 ---
 
@@ -214,7 +213,7 @@ pod/nginx-pod created
 
 # 📸 Screenshot
 
-![Task 2 - Deploy Pod](./screenshots/task2-deploy-pod.png)
+![Task 2 - Deploy Pod](./screenshots/task2-deploy-pod.PNG)
 
 ---
 
@@ -271,7 +270,7 @@ nginx-pod   1/1     Running   0          15s
 
 # 📸 Screenshot
 
-![Task 3 - Verify Pod Status](./screenshots/task3-verify-pod-status.png)
+![Task 3 - Verify Pod Status](./screenshots/task3-verify-pod-status.PNG)
 
 ---
 
@@ -323,7 +322,7 @@ Containers:
 ## Pod IP
 
 ```text
-IP: 10.244.0.5
+IP: 10.42.0.10
 ```
 
 ---
@@ -341,8 +340,8 @@ Events:
 
 # 📸 Screenshot
 
-![Task 4 - Describe Pod](./screenshots/task4-describe-pod1.png)
-![Task 4 - Describe Pod](./screenshots/task4-describe-pod2.png)
+![Task 4 - Describe Pod](./screenshots/task4-describe-pod1.PNG)
+![Task 4 - Describe Pod](./screenshots/task4-describe-pod2.PNG)
 
 ---
 
@@ -387,7 +386,7 @@ Expected output:
 
 # 📸 Screenshot
 
-![Task 5 - View Logs](./screenshots/task6-view-logs.png)
+![Task 5 - View Logs](./screenshots/task6-view-logs.PNG)
 
 ---
 
@@ -443,7 +442,7 @@ No resources found
 
 # 📸 Screenshot
 
-![Task 6 - Delete Pod](./screenshots/task7-delete-pod.png)
+![Task 6 - Delete Pod](./screenshots/task7-delete-pod.PNG)
 
 ---
 
