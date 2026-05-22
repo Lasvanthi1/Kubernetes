@@ -386,7 +386,7 @@ Expected output:
 
 # 📸 Screenshot
 
-![Task 5 - View Logs](./screenshots/task6-view-logs.PNG)
+![Task 5 - View Logs](./screenshots/task5-view-logs.PNG)
 
 ---
 
@@ -442,7 +442,7 @@ No resources found
 
 # 📸 Screenshot
 
-![Task 6 - Delete Pod](./screenshots/task7-delete-pod.PNG)
+![Task 6 - Delete Pod](./screenshots/task6-delete-pod.PNG)
 
 ---
 
@@ -526,7 +526,7 @@ Each Pod receives:
 Example:
 
 ```text
-Pod IP → 10.244.0.5
+Pod IP → 10.42.0.10
 ```
 
 All containers inside the Pod share this IP.
