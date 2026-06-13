@@ -161,20 +161,20 @@ Expected:
 
 ```text
 NAME           STATUS
-restored-pvc   Pending
+restored-pvc   Lost
 ```
 
 or
 
 ```text
-transaction-pvc Pending
+transaction-pvc Lost
 ```
 
 PVC cannot bind because no matching PV exists.
 
 ---
 
-![PVC Lost](screenshots/02-pvc-pending-or-lost.png)
+![PVC Lost](screenshots/02-pvc-pending.png)
 
 
 ---
