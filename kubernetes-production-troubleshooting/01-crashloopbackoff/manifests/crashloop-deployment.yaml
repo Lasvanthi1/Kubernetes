@@ -1,0 +1,31 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: payment-service
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: payment-service
+  template:
+    metadata:
+      labels:
+        app: payment-service
+    spec:
+      containers:
+      - name: payment-service
+        image: busybox
+        env:
+        - name: DB_HOST
+          value: postgres-prod
+        command:
+        - /bin/sh
+        - -c
+        - |
+          echo "Connecting to database..."
+          nslookup $DB_HOST
+          if [ $? -ne 0 ]; then
+            echo "Database connection failed"
+            exit 1
+          fi
+          sleep 3600
