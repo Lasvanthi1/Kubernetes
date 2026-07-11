@@ -48,7 +48,7 @@ kubectl apply -f liveness.yaml
 
 ### Screenshot
 
-![Pod Created](Lab-1-Liveness-Probe/screenshots/01-liveness-pod-created.png)
+![Pod Created](Lab-1-Liveness-Probe/screenshots/01-pod-running.png)
 
 ```bash
 
@@ -76,7 +76,7 @@ kubectl describe pod livenessprobe-pod
 
 ### Screenshot
 
-![Liveness Probe Configuration](Lab-1-Liveness-Probe/screenshots/02-liveness-probe-config.png)
+![Liveness Probe Configuration](Lab-1-Liveness-Probe/screenshots/02-liveness-config.png)
 Capture:
 
 ```text
@@ -102,7 +102,7 @@ exit
 
 ### Screenshot
 
-![03-nginx-stopped](Lab-1-Liveness-Probe/screenshots/03-nginx-stopped.png)
+![03-nginx-stopped](Lab-1-Liveness-Probe/screenshots/03-nginx-stop.png)
 
 ### Explanation
 
@@ -118,7 +118,7 @@ kubectl get pods -w
 
 ### Screenshot
 
-![04-liveness-restart-count](Lab-1-Liveness-Probe/screenshots/04-liveness-restart-count.png)
+![04-liveness-restart-count](Lab-1-Liveness-Probe/screenshots/04-restart-counter.png)
 
 Expected:
 
@@ -140,7 +140,7 @@ kubectl describe pod livenessprobe-pod
 
 ### Screenshot
 
-![05-liveness-last-state](Lab-1-Liveness-Probe/screenshots/05-liveness-last-state.png)
+![05-liveness-last-state](Lab-1-Liveness-Probe/screenshots/05-liveness-events.png)
 
 Capture:
 
@@ -183,7 +183,7 @@ kubectl apply -f service.yaml
 
 ### Screenshot
 
-![Readiness Resources Created](Lab-2-Readiness-Probe/screenshots/01-readiness-resources-created.png)
+![Readiness Resources Created](Lab-2-Readiness-Probe/screenshots/01-ready-transition.png)
 
 ```bash
 kubectl get pods
@@ -204,7 +204,7 @@ kubectl get pods -w
 
 ### Screenshot
 
-![Readiness Transition](Lab-2-Readiness-Probe/screenshots/02-readiness-transition.png)
+![Readiness Transition](Lab-2-Readiness-Probe/screenshots/02-service-created.png)
 
 Capture:
 
@@ -236,7 +236,7 @@ exit
 
 ### Screenshot
 
-![Readiness Failure Simulation](Lab-2-Readiness-Probe/screenshots/03-readiness-failure-simulation.png)
+![Readiness Failure Simulation](Lab-2-Readiness-Probe/screenshots/03-delete-index-file.png)
 
 ### Explanation
 
@@ -252,7 +252,7 @@ kubectl get pods
 
 ### Screenshot
 
-![Readiness Zero One](Lab-2-Readiness-Probe/screenshots/04-readiness-zero-one.png)
+![Readiness Zero One](Lab-2-Readiness-Probe/screenshots/04-ready-zero-one.png)
 
 Expected:
 
@@ -275,7 +275,7 @@ kubectl get endpoints readiness-service
 
 ### Screenshot
 
-![Readiness Endpoints](Lab-2-Readiness-Probe/screenshots/05-readiness-endpoints.png)
+![Readiness Endpoints](Lab-2-Readiness-Probe/screenshots/05-readiness-events.png)
 
 ### Explanation
 
@@ -291,7 +291,7 @@ kubectl describe pod readiness-pod
 
 ### Screenshot
 
-![Readiness Events](Lab-2-Readiness-Probe/screenshots/06-readiness-events.png)
+![Readiness Events](Lab-2-Readiness-Probe/screenshots/06-service-endpoints.png)
 
 ### Explanation
 
@@ -379,9 +379,6 @@ Events show startup probe execution before liveness and readiness probes become 
 kubectl describe pod startup-pod
 ```
 
-### Screenshot
-
-![Startup Success](Lab-3-Startup-Probe/screenshots/04-startup-success.png)
 
 ### Explanation
 
@@ -411,7 +408,7 @@ kubectl apply -f tcp-probe.yaml
 
 ### Screenshot
 
-![TCP Pod Created](Lab-4-TCP-Probe/screenshots/01-tcp-pod-created.png)
+![TCP Pod Created](Lab-4-TCP-Probe/screenshots/01-tcp-pod-running.png)
 
 ```bash
 kubectl get pods
@@ -502,7 +499,7 @@ kubectl apply -f command-probe.yaml
 
 ### Screenshot
 
-![Command Probe Created](Lab-5-Command-Probe/screenshots/01-command-probe-created.png)
+![Command Probe Created](Lab-5-Command-Probe/screenshots/01-command-pod-running.png)
 
 ```bash
 kubectl get pods
@@ -542,7 +539,7 @@ exit
 
 ### Screenshot
 
-![Heartbeat File Deleted](Lab-5-Command-Probe/screenshots/03-heartbeat-file-deleted.png)
+![Heartbeat File Deleted](Lab-5-Command-Probe/screenshots/03-delete-heartbeat-file.png)
 
 ### Explanation
 
@@ -558,7 +555,7 @@ kubectl get pods -w
 
 ### Screenshot
 
-![Command Probe Restart](Lab-5-Command-Probe/screenshots/04-command-probe-restart.png)
+![Command Probe Restart](Lab-5-Command-Probe/screenshots/04-restart-after-failure.png)
 
 Expected:
 
@@ -580,7 +577,7 @@ kubectl describe pod command-probe
 
 ### Screenshot
 
-![Command Probe Events](Lab-5-Command-Probe/screenshots/05-command-probe-events.png)
+![Command Probe Events](Lab-5-Command-Probe/screenshots/05-exec-probe-events.png)
 
 Capture:
 
