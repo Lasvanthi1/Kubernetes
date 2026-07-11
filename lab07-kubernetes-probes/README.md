@@ -183,7 +183,7 @@ kubectl apply -f service.yaml
 
 ### Screenshot
 
-![Readiness Resources Created](Lab-2-Readiness-Probe/screenshots/01-ready-transition.png)
+![Readiness Resources Created](Lab-2-Readiness-Probe/screenshots/02-service-created.png)
 
 ```bash
 kubectl get pods
@@ -204,7 +204,7 @@ kubectl get pods -w
 
 ### Screenshot
 
-![Readiness Transition](Lab-2-Readiness-Probe/screenshots/02-service-created.png)
+![Readiness Transition](Lab-2-Readiness-Probe/screenshots/01-ready-transition.png)
 
 Capture:
 
@@ -275,7 +275,7 @@ kubectl get endpoints readiness-service
 
 ### Screenshot
 
-![Readiness Endpoints](Lab-2-Readiness-Probe/screenshots/05-readiness-events.png)
+![Readiness Endpoints](Lab-2-Readiness-Probe/screenshots/06-service-endpoints.png)
 
 ### Explanation
 
@@ -291,7 +291,7 @@ kubectl describe pod readiness-pod
 
 ### Screenshot
 
-![Readiness Events](Lab-2-Readiness-Probe/screenshots/06-service-endpoints.png)
+![Readiness Events](Lab-2-Readiness-Probe/screenshots/05-readiness-events.png)
 
 ### Explanation
 
