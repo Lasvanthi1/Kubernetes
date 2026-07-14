@@ -43,12 +43,7 @@ kubectl get nodes
 
 ### Screenshot
 
-Add screenshot:
-
-```text
-screenshots/01-cluster-ready.png
-```
-
+![Cluster Created](screenshots/02-kubectl-get-nodes.png)
 ---
 
 ## Step 1: Install Metrics Server
@@ -82,11 +77,8 @@ kubectl top nodes
 
 ### Screenshot
 
-Add screenshot:
 
-```text
-screenshots/02-metrics-server-running.png
-```
+![Metrics Server](screenshots/01-metrics-server-running.png)
 
 ---
 
@@ -113,11 +105,7 @@ php-apache-xxxxx Running
 
 ### Screenshot
 
-Add screenshot:
-
-```text
-screenshots/03-php-apache-running.png
-```
+![Deployment Running](screenshots/01-deployment-running.png)
 
 ---
 
@@ -147,11 +135,7 @@ php-apache   Deployment/php-apache        0%/50%
 
 ### Screenshot
 
-Add screenshot:
-
-```text
-screenshots/04-hpa-created.png
-```
+![HPA Created](screenshots/02-hpa-created.png)
 
 ---
 
@@ -171,11 +155,7 @@ This continuously sends requests to the application.
 
 ### Screenshot
 
-Add screenshot:
-
-```text
-screenshots/05-load-generator.png
-```
+![Load Generator](screenshots/03-load-generator.png)
 
 ---
 
@@ -199,11 +179,7 @@ TARGETS     REPLICAS
 
 ### Screenshot
 
-Add screenshot:
-
-```text
-screenshots/06-hpa-scaling.png
-```
+![HPA Scaling](screenshots/04-hpa-scaling.png)
 
 ---
 
@@ -226,12 +202,8 @@ php-apache-zzzzz Running
 
 ### Screenshot
 
-Add screenshot:
 
-```text
-screenshots/07-scaled-pods.png
-```
-
+![Pods Scaled](screenshots/05-pods-scaled.png)
 ---
 
 ## Key Learning
