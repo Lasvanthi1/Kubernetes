@@ -42,7 +42,7 @@ kubectl get nodes
 
 ### Screenshot
 
-![Cluster Created](prerequisites/screenshots/02-kubectl-get-nodes.png)
+![Cluster Created](screenshots/02-kubectl-get-nodes.png)
 
 ---
 
